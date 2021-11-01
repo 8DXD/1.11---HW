@@ -11,7 +11,7 @@ int main(void)
 	if (vstup == 1) {
 		int a, b, c;
 		printf("Zadej strany trojuhelnika: ");
-		scanf("%f %f %f", &a, &b, &c);
+		scanf("%d %d %d", &a, &b, &c);
 		int pocitadlo = 0;
 		if (a + b > c) pocitadlo++;
 		if (c + b > a) pocitadlo++;

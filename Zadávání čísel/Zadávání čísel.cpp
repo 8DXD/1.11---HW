@@ -22,6 +22,7 @@ int main(void)
 			printf("   Obvod trojuhelnika je %d\n", obt);
 			float s = (float) (a + b + c) / 2;
 			float Ob =(float) sqrt(s * (s - a) * (s - b) * (s - c));
+			printf("   Obsah trojuhelnika je %f\n", Ob);
 			int pyt = 0;
 			if (a * a == b * b + c * c) pyt++;
 			if (b * b == a * a + c * c) pyt++;
@@ -42,5 +43,10 @@ int main(void)
 	}
 	else {
 		//Kruznice
+		float r;
+		printf("Zadej polomer kruznice: ");
+		scanf("%d", &r);
+		printf("   Obvod: %f\n", 3.14 * 2 * r);
+		printf("   Obsah: %f\n", 3.14 * r * r);
 	}
 }

@@ -40,13 +40,24 @@ int main(void)
 	}
 	else if (vstup == 2) {
 		//Obdelnik
+		int a, b;
+		printf("Zadej rozmery obdelnika ");
+		scanf("%d %d", &a, &b);
+		if (a == b) {
+			printf("POZOR!!! Zadal jsi rozmery ctverce");
+		}
+		else {
+			int	Obvod = 2 * (a + b), Obsah = a * b;
+			printf("   Obvod obdelnika je %d\n", Obvod);
+			printf("   Obsah obdelnika je %d\n", Obsah);
+		}
 	}
 	else {
 		//Kruznice
 		float r;
 		printf("Zadej polomer kruznice: ");
-		scanf("%d", &r);
-		printf("   Obvod: %f\n", 3.14 * 2 * r);
-		printf("   Obsah: %f\n", 3.14 * r * r);
+		scanf("%f", &r);
+		printf("   Obvod: %f\n", 3.14159 * 2 * r);
+		printf("   Obsah: %f\n", 3.14159 * r * r);
 	}
 }
